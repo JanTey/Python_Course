@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
-
+'=================================================================='
 print("man izdevās!")
-
+'=================================================================='
 # Paslēpjam galveno tukšo logu (Прячем основное окно)
 root = tk.Tk()
 root.withdraw()
