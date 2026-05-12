@@ -7,7 +7,7 @@ root.withdraw()
 
 # 1. Nolasa pilsētas (Загружаем данные)
 try:
-    with open("/Users/jante/Documents/Python_Course/cities1.txt", "r", encoding="utf-8") as file:
+    with open("pielikumi/cities1.txt", "r", encoding="utf-8") as file:
         cities = [line.strip() for line in file.readlines()]
 except FileNotFoundError:
     messagebox.showerror("Kļūda", "Fails cities.txt netika atrasts!")
