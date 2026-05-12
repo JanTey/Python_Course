@@ -1,5 +1,7 @@
 # PD01 
 Žanis Teivāns (Zhan Teivan)
+
+[Mana praktiskā darba mape GitHub platformā](https://github.com/JanTey/Python_Course/tree/main/PD01)
 ## Python pamati (Основы Python)
 
 ### 1. Vingrinājums
