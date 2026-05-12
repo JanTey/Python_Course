@@ -12,7 +12,9 @@
 """
 
 # Faila atvēršana lasīšanas režīmā (Открытие файла в режиме чтения)
-with open("cities1.txt", "r", encoding="utf-8") as file:
+# Замените путь ниже на полный путь к файлу из вашей системы
+with open("/Users/jante/Documents/Python_Course/cities1.txt", "r", encoding="utf-8") as file:
+    
     # Faila satura pārvēršana sarakstā (Превращение содержимого файла в список)
     cities_from_file = [line.strip() for line in file.readlines()]
 
@@ -41,7 +43,7 @@ for city in cities_from_file:
 # =================================================================================
 # =================================================================================
 
-with open("cities1.txt", "r", encoding="utf-8") as file:
+with open("/Users/jante/Documents/Python_Course/cities1.txt", "r", encoding="utf-8") as file:
     content = file.read()
     print("========================================================")
     print(content)

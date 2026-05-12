@@ -1,0 +1,108 @@
+Vārds,Tulkojums,Kategorija
+Suns,Собака,Lietvārds
+Māja,Дом,Lietvārds
+Ziedi,Цветы,Lietvārds
+Lidojums,Полёт,Lietvārds
+Saldējums,Мороженое,Lietvārds
+Draugs,Друг,Lietvārds
+Mīlestība,Любовь,Lietvārds
+Skola,Школа,Lietvārds
+Grāmata,Книга,Lietvārds
+Zvaigzne,Звезда,Lietvārds
+Laiks,Время,Lietvārds
+Ceļojums,Путешествие,Lietvārds
+Daba,Природа,Lietvārds
+Skaņa,Звук,Lietvārds
+Mūzika,Музыка,Lietvārds
+Deja,Танец,Lietvārds
+Dziesma,Песня,Lietvārds
+Gaisma,Свет,Lietvārds
+Tumsa,Тьма,Lietvārds
+Siltums,Тепло,Lietvārds
+Aukstums,Холод,Lietvārds
+Prieks,Радость,Lietvārds
+Skaists,Красивый,Īpašības vārds
+Liels,Большой,Īpašības vārds
+Mazs,Маленький,Īpašības vārds
+Jauns,Новый,Īpašības vārds
+Vecs,Старый,Īpašības vārds
+Sarkans,Красный,Īpašības vārds
+Zaļš,Зелёный,Īpašības vārds
+Zils,Синий,Īpašības vārds
+Balts,Белый,Īpašības vārds
+Melns,Чёрный,Īpašības vārds
+Dzeltens,Жёлтый,Īpašības vārds
+Brūns,Коричневый,Īpašības vārds
+Oranžs,Оранжевый,Īpašības vārds
+Violets,Фиолетовый,Īpašības vārds
+Rozā,Розовый,Īpašības vārds
+Gudrs,Умный,Īpašības vārds
+Stulbs,Глупый,Īpašības vārds
+Bagāts,Богатый,Īpašības vārds
+Smaidīgs,Улыбчивый,Īpašības vārds
+Skumjš,Грустный,Īpašības vārds
+Dusmīgs,Злой,Īpašības vārds
+Noguris,Уставший,Īpašības vārds
+Enerģisks,Энергичный,Īpašības vārds
+Laimīgs,Счастливый,Īpašības vārds
+Bēdīgs,Грустный,Īpašības vārds
+Skriet,Бежать,Darbības vārds (1. grupa)
+Lēkt,Прыгать,Darbības vārds (1. grupa)
+Dzert,Пить,Darbības vārds (1. grupa)
+Ēst,Есть,Darbības vārds (1. grupa)
+Nīst,Ненавидеть,Darbības vārds (1. grupa)
+Runāt,Говорить,Darbības vārds (2. grupa)
+Rakstīt,Писать,Darbības vārds (2. grupa)
+Lasīt,Читать,Darbības vārds (2. grupa)
+Domāt,Думать,Darbības vārds (2. grupa)
+Sapņot,Мечтать,Darbības vārds (2. grupa)
+Mīlēt,Любить,Darbības vārds (2. grupa)
+Raudāt,Плакать,Darbības vārds (2. grupa)
+Smaidīt,Улыбаться,Darbības vārds (2. grupa, atgriezenisks)
+Sēdēt,Сидеть,Darbības vārds (3. grupa)
+Stāvēt,Стоять,Darbības vārds (3. grupa)
+Redzēt,Видеть,Darbības vārds (3. grupa)
+Dzirdēt,Слышать,Darbības vārds (3. grupa)
+Zināt,Знать,Darbības vārds (3. grupa)
+ātri,быстро,Apstākļa vārds
+lēni,медленно,Apstākļa vārds
+skaļi,громко,Apstākļa vārds
+klusām,тихо,Apstākļa vārds
+labprāt,охотно,Apstākļa vārds
+bieži,часто,Apstākļa vārds
+reti,редко,Apstākļa vārds
+vienmēr,всегда,Apstākļa vārds
+nekad,никогда,Apstākļa vārds
+vakar,вчера,Apstākļa vārds
+rīt,завтра,Apstākļa vārds
+šodien,сегодня,Apstākļa vārds
+tagad,сейчас,Apstākļa vārds
+tad,тогда,Apstākļa vārds
+agrāk,раньше,Apstākļa vārds
+vēlāk,позже,Apstākļa vārds
+nevēlami,нежелательно,Apstākļa vārds
+uz,на,Prievārds
+ar,с,Prievārds
+bez,без,Prievārds
+par,о,Prievārds
+pēc,после,Prievārds
+pirms,до,Prievārds
+līdz,до,Prievārds
+virs,над,Prievārds
+zem,под,Prievārds
+blakus,рядом,Prievārds
+pret,против,Prievārds
+caur,через,Prievārds
+starp,между,Prievārds
+Sveiki,Привет,Izsauksmes vārds
+Uz redzēšanos,До свидания,Izsauksmes vārds
+Paldies,Спасибо,Izsauksmes vārds
+Lūdzu,Пожалуйста,Izsauksmes vārds
+Atvainojiet,Извините,Izsauksmes vārds
+Jā,Да,Izsauksmes vārds
+Nē,Нет,Izsauksmes vārds
+Varbūt,Возможно,Izsauksmes vārds
+Protams,Конечно,Izsauksmes vārds
+Iet,Идти,Darbības vārds (irregular)
+Būt,Быть,Darbības vārds (irregular)
+Dot,Давать,Darbības vārds (irregular)

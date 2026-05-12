@@ -1,0 +1,136 @@
+Vārds,Tulkojums,Kategorija
+Suns,Собака,Lietvārds
+Māja,Дом,Lietvārds
+Ziedi,Цветы,Lietvārds
+Lidojums,Полёт,Lietvārds
+Saldējums,Мороженое,Lietvārds
+Draugs,Друг,Lietvārds
+Mīlestība,Любовь,Lietvārds
+Skola,Школа,Lietvārds
+Grāmata,Книга,Lietvārds
+Zvaigzne,Звезда,Lietvārds
+Laiks,Время,Lietvārds
+Ceļojums,Путешествие,Lietvārds
+Daba,Природа,Lietvārds
+Skaists,Красивый,Īpašības vārds
+Liels,Большой,Īpašības vārds
+Mazs,Маленький,Īpašības vārds
+Jauns,Новый,Īpašības vārds
+Vecs,Старый,Īpašības vārds
+Sarkans,Красный,Īpašības vārds
+Zaļš,Зелёный,Īpašības vārds
+Zils,Синий,Īpašības vārds
+Balts,Белый,Īpašības vārds
+Melns,Чёрный,Īpašības vārds
+Dzeltens,Жёлтый,Īpašības vārds
+Brūns,Коричневый,Īpašības vārds
+Oranžs,Оранжевый,Īpašības vārds
+Violets,Фиолетовый,Īpašības vārds
+Rozā,Розовый,Īpašības vārds
+Skaņa,Звук,Lietvārds
+Mūzika,Музыка,Lietvārds
+Deja,Танец,Lietvārds
+Dziesma,Песня,Lietvārds
+Gaisma,Свет,Lietvārds
+Tumsa,Тьма,Lietvārds
+Siltums,Тепло,Lietvārds
+Aukstums,Холод,Lietvārds
+Prieks,Радость,Lietvārds
+Skriet,Бежать,Darbības vārds
+Lēkt,Прыгать,Darbības vārds
+Sēdēt,Сидеть,Darbības vārds
+Stāvēt,Стоять,Darbības vārds
+Runāt,Говорить,Darbības vārds
+Rakstīt,Писать,Darbības vārds
+Lasīt,Читать,Darbības vārds
+Dzert,Пить,Darbības vārds
+Ēst,Есть,Darbības vārds
+Mīlēt,Любить,Darbības vārds
+Nīst,Ненавидеть,Darbības vārds
+Redzēt,Видеть,Darbības vārds
+Dzirdēt,Слышать,Darbības vārds
+Domāt,Думать,Darbības vārds
+Zināt,Знать,Darbības vārds
+Sapņot,Мечтать,Darbības vārds
+Smaidīt,Улыбаться,Darbības vārds
+Raudāt,Плакать,Darbības vārds
+Smaidīgs,Улыбчивый,Īpašības vārds
+Skumjš,Грустный,Īpašības vārds
+Dusmīgs,Злой,Īpašības vārds
+Noguris,Уставший,Īpašības vārds
+Enerģisks,Энергичный,Īpašības vārds
+Laimīgs,Счастливый,Īpašības vārds
+Bēdīgs,Грустный,Īpašības vārds
+Skaists,Красивый,Īpašības vārds
+Gudrs,Умный,Īpašības vārds
+Stulbs,Глупый,Īpašības vārds
+Bagāts,Богатый,Īpašības vārds
+Kāds,Какой,Īpašības vārds
+Sarkans,Красный,Īpašības vārds
+Zaļš,Зелёный,Īpašības vārds
+Zils,Синий,Īpašības vārds
+Balts,Белый,Īpašības vārds
+Melns,Чёрный,Īpašības vārds
+Dzeltens,Жёлтый,Īpašības vārds
+Brūns,Коричневый,Īpašības vārds
+Oranžs,Оранжевый,Īpašības vārds
+Violets,Фиолетовый,Īpašības vārds
+Rozā,Розовый,Īpašības vārds
+Skaņa,Звук,Lietvārds
+Mūzika,Музыка,Lietvārds
+Deja,Танец,Lietvārds
+Dziesma,Песня,Lietvārds
+Gaisma,Свет,Lietvārds
+Tumsa,Тьма,Lietvārds
+Siltums,Тепло,Lietvārds
+Aukstums,Холод,Lietvārds
+Prieks,Радость,Lietvārds
+Skriet,Бежать,Darbības vārds
+Lēkt,Прыгать,Darbības vārds
+Sēdēt,Сидеть,Darbības vārds
+Stāvēt,Стоять,Darbības vārds
+Runāt,Говорить,Darbības vārds
+Rakstīt,Писать,Darbības vārds
+Lasīt,Читать,Darbības vārds
+Dzert,Пить,Darbības vārds
+Ēst,Есть,Darbības vārds
+Mīlēt,Любить,Darbības vārds
+ātri,быстро,Apstākļa vārds
+lēni,медленно,Apstākļa vārds
+skaļi,громко,Apstākļa vārds
+klusām,тихо,Apstākļa vārds
+labprāt,охотно,Apstākļa vārds
+nevēlami,нежелательно,Apstākļa vārds
+bieži,часто,Apstākļa vārds
+reti,редко,Apstākļa vārds
+vienmēr,всегда,Apstākļa vārds
+nekad,никогда,Apstākļa vārds
+tad,тогда,Apstākļa vārds
+vakar,вчера,Apstākļa vārds
+rīt,завтра,Apstākļa vārds
+šodien,сегодня,Apstākļa vārds
+agrāk,раньше,Apstākļa vārds
+vēlāk,позже,Apstākļa vārds
+tagad,сейчас,Apstākļa vārds
+Sveiki,Привет,Izsauksmes vārds
+Uz redzēšanos,До свидания,Izsauksmes vārds
+Paldies,Спасибо,Izsauksmes vārds
+Lūdzu,Пожалуйста,Izsauksmes vārds
+Atvainojiet,Извините,Izsauksmes vārds
+Jā,Да,Izsauksmes vārds
+Nē,Нет,Izsauksmes vārds
+Varbūt,Возможно,Izsauksmes vārds
+Protams,Конечно,Izsauksmes vārds
+uz,на,Prievārds
+ar,с,Prievārds
+bez,без,Prievārds
+par,о,Prievārds
+pēc,после,Prievārds
+pirms,до,Prievārds
+līdz,до,Prievārds
+virs,над,Prievārds
+zem,под,Prievārds
+blakus,рядом,Prievārds
+pret,против,Prievārds
+caur,через,Prievārds
+starp,между,Prievārds
