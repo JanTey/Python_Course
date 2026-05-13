@@ -14,8 +14,8 @@
 Pārbaudi, vai sagatavota darba vide:
 
 * [ ] Izveidota mape `PD01`
-* [ ] Izveidota apakšmape `pielikumi`
-* [ ] Izveidota apakšmape `atteli`
+* [ ] Izveidota apakšmape `attachments`
+* [ ] Izveidota apakšmape `screenshots`
 * [ ] Izveidots fails `atskaite_PD01.md`
 
 ---
