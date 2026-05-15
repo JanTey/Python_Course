@@ -1,6 +1,6 @@
 # Praktiskā darba atskaite — PD02
 
-**Tēma:** Python pamati  
+**Tēma:** Mainīgie, datu tipi un aprēķini  
 **Vārds, Uzvārds:** Zhan Teivan 
 **Datums:** 2026-05-12  
 **Grupa:**  DAAVP_Daugavpils_80
@@ -24,7 +24,6 @@ Pārbaudi, vai sagatavota darba vide:
 
 ```text
 PD02/
-├─ atskaite_PDXX.md
 ├─ Pielikumi/
 │  ├─ vng01.py
 │  ├─ vng02.py
