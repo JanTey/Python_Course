@@ -72,7 +72,6 @@ vng01.py
 
 ```python id="mt3k0v"
 '''
-'''
 Uzdevums
 Izveido programmu, kas:
 1. palūdz ievadīt divus skaitļus;
