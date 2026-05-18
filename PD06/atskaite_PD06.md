@@ -30,20 +30,17 @@ PD06/
 │  ├─ vng03.py
 │  ├─ vng04.py
 │  ├─ vng05.py
-│  ├─ vng06.py
-│  └─ vng07.py
+│  └─ vng06.py
 ├─ atteli/
 │  ├─ maps_structure.png
 │  ├─ vng01.png
 │  ├─ vng02.png
 │  ├─ vng03.png
 │  ├─ vng04.png
-│  ├─ vng04-2.png
 │  ├─ vng05.png
 │  ├─ vng06a.png
-│  ├─ vng06b.png
-│  └─ vng07.png
-└─ atskaite_PD05.md
+│  └─ vng06b.png
+└─ atskaite_PD06.md
 ````
 
 ---
