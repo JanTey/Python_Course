@@ -16,7 +16,7 @@ Pārbaudi, vai sagatavota darba vide:
 * [x] Izveidota mape `PD05`
 * [x] Izveidota apakšmape `pielikumi`
 * [x] Izveidota apakšmape `atteli`
-* [x] Izveidots fails `atskaite_PD04.md`
+* [x] Izveidots fails `atskaite_PD05.md`
 
 ---
 
