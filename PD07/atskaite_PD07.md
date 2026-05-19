@@ -6,7 +6,7 @@
 **Grupa:**  DAAVP_Daugavpils_80
 
 
-[Mana praktiskā darba mape GitHub platformā](https://github.com/JanTey/Python_Course/blob/main/PD06/atskaite_PD07.md)
+[Mana praktiskā darba mape GitHub platformā](https://github.com/JanTey/Python_Course/blob/main/PD07/atskaite_PD07.md)
 
 ---
 # 📁 0. Sagatavošanās darbi
