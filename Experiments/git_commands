@@ -1,0 +1,7 @@
+git add -A   
+
+git commit -m "Complete lesson PD08"
+
+git commit -m "Edit .md files"     
+
+git push
