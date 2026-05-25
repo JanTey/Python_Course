@@ -25,6 +25,7 @@ def pārbaudīt_sistēmu(parole):
     else:
         if i == 4:
             print("\n❌ Maksimālais mēģinājumu skaits sasniegts. Sistēma bloķēta.")
+            return None
         else:
             print("\n⚠️ Parole netika pieņemta! Mēģiniet vēlreiz.")
             return False # Parole nedarbojās
