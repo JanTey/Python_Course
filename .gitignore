@@ -7,7 +7,7 @@ __pycache__/
 *$py.class
 
 # Виртуальные окружения (то, что весит больше всего)
-*.continue
+*.continue/
 *.egg-info/
 .venv/
 venv/
