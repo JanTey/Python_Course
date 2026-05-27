@@ -497,7 +497,6 @@ vng08.py
 
 ```python id="mt3k0v"
 '''
-'''
 Uzdevums
 Dots kods:
 vards1 = input("1. vārds: ")
