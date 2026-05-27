@@ -1,3 +1,7 @@
+import my_lib.terminal_utils
+
+my_lib.terminal_utils.clear_screen()
+
 """
 Programma ar izvēlni, funkciju ievades apstrādei un visu kļūdu apstrādi.
 """

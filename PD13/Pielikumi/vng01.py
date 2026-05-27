@@ -12,6 +12,9 @@ kas jāizlabo.
 Sagaidāmais rezultāts
 Darbojas
 """
+import my_lib.terminal_utils
+
+my_lib.terminal_utils.clear_screen()
 
 if 10 > 5:
     print("\nDarbojas\n")

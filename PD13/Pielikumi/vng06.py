@@ -1,3 +1,5 @@
+import my_lib.terminal_utils
+my_lib.terminal_utils.clear_screen()
 """
 Uzdevums
 skaitli = [10,20,30]
