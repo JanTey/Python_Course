@@ -24,3 +24,8 @@ ENV/
 .idea/
 data/*
 .junie/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
