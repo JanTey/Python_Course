@@ -6,7 +6,7 @@
 **Grupa:**  Daugavpils_77978_11.05.2026.-05.06.2026
 
 
-[Mana praktiskā darba mape GitHub platformā](https://github.com/JanTey/Python_Course/blob/main/atskaite_PD15.md)
+[Mana praktiskā darba mape GitHub platformā](https://github.com/JanTey/Python_Course/blob/main/PD15/atskaite_PD15.md)
 
 
 ---
