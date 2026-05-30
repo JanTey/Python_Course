@@ -30,7 +30,6 @@ PD15_Teivan_Zhan/
 │  ├─ bonus_2.py
 │  ├─ bonus_3.py
 │  ├─ bonus_4.py
-│  ├─ mans_riku_komplekts.py
 │  ├─ dzivnieki.txt
 │  ├─ vng01.py
 │  ├─ vng02.py
@@ -69,7 +68,7 @@ Pievieno ekrānuzņēmumu ar mapes struktūru.
 ## Faila nosaukums
 
 ```text id="pjlwmj"
-vng01.py, vng01_sasveicinas.py
+vng01.py
 ```
 ---
 
@@ -206,7 +205,7 @@ izvada datus par katru grāmatu.
 ## Faila nosaukums
 
 ```text id="sdm8v5"
-vng03.py, vng03_aprekini.py
+vng03.py
 ```
 ---
 
