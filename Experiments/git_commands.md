@@ -1,3 +1,5 @@
+source .venv/bin/activate
+
 git add -A   
 
 git commit -m "Complete lesson PD08"
