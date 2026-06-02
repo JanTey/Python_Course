@@ -9,7 +9,7 @@
 * Praktiskā darba kods: PD17
 * Datums:** 2026-06-01  
 
-[Mana praktiskā darba mape GitHub platformā](https://github.com/JanTey/Python_Course/blob/main/PD16/atskaite_PD16.md)
+[Mana praktiskā darba mape GitHub platformā](https://github.com/JanTey/Python_Course/blob/main/PD17/atskaite_PD17.md)
 
 ---
 
@@ -718,4 +718,4 @@ Materiāli ir pievienoti
 * projekta faili - /PD17/pielikumi/*.*; 
 * ekrānattēli - /PD17/atteli/*.*;
 * dokumentācija - READMI.md, atskaite_PD17.md, vng05_projekta_struktura.txt; 
-* [Git izmaiņu vēsture](https://github.com/JanTey/Python_Course/blob/main/PD16/atskaite_PD16.md).
+* [Git izmaiņu vēsture](https://github.com/JanTey/Python_Course/blob/main/PD17/atskaite_PD17.md).
