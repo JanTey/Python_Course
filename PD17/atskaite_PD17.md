@@ -523,9 +523,6 @@ Uzdevumu gaitā tika veiktas izmaiņas
 
 ☐ Preventive (profilaktiskā)** 
 
-Pamatojums:
-Обоснование:
-
 ---
 
 PD17 projektā tika veikti **divi uzturēšanas veidi**:
@@ -574,17 +571,15 @@ Jā, projektā tika identificēts tehniskais parāds. Sākotnējā programmā pa
 
 ### Incidenti pēc pieprasījuma un pēc izmaiņām
 
-☐ Incident / Инцидент
+☐ Incident
 
-☐ Change Request / Запрос на изменение
+☐ Change Request
 
-✅ **Abi / Оба**
+✅ **Abi**
 
 ---
 
 ### Pamatojums / Обоснование
-
-**Latviski:**
 
 Projektā tika konstatēti gan **incidents**, gan **izmaiņu pieprasījums**.
 
@@ -606,11 +601,6 @@ Abi gadījumi prasīja izmaiņas esošajā kodā - gan kļūdas labojumu, gan ko
 ---
 
 # 9. Rezultāts
-  9. Результат
-
-Apraksti gala rezultātu.
-Опиши итоговый результат.
-
 
 Uzlabots:
 - Mainīgo nosaukumi pārdēvēti uz saprotamiem (snake_case)

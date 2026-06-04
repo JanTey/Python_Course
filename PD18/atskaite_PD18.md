@@ -6,8 +6,8 @@
 
 * Vārds, Uzvārds:** Zhan Teivan 
 * Grupa:**  Daugavpils_77978_11.05.2026.-05.06.2026
-* Praktiskā darba kods: PD17
-* Datums:** 2026-06-01  
+* Praktiskā darba kods: PD18
+* Datums:** 2026-06-03  
 
 [Mana praktiskā darba mape GitHub platformā](https://github.com/JanTey/Python_Course/blob/main/PD18/atskaite_PD18.md)
 
@@ -17,40 +17,31 @@
 
 Šajā darbā bija paredzēts apgūt:
 
-- Saprotamu mainīgo nosaukumu izvēli (snake_case)
-- Noderīgu komentāru rakstīšanu (kāpēc, nevis ko)
-- Koda sadalīšanu funkcijās (modularitāte)
-- Funkciju dokumentēšanu ar docstring
-- Projekta dokumentācijas veidošanu (README.md)
-
-Tika attīstītas šādas uzturēšanas prasmes:
-
-- **Analīzes prasme** - atpazīt problēmas kodā (neskaidri nosaukumi, lieki komentāri)
-- **Koda refaktorēšanas prasme** - uzlabot kodu bez funkcionalitātes maiņas
-- **Dokumentēšanas prasme** - rakstīt saprotamu docstring un README
-- **Kļūdu labošanas prasme** - identificēt un novērst loģikas kļūdas
-- **Tehniskā parāda samazināšanas prasme** - uzlabot koda kvalitāti
-- **Projektu strukturēšanas prasme** - organizēt failus un mapes
+Šī darba mērķis bija iemācīties analizēt projekta mapes saturu ar Python palīdzību un pārbaudīt 
+projekta kvalitāti. Darba laikā tika izmantots os modulis, nosacījumi, cikli, saraksti, funkcijas 
+un Tkinter logs. Tika attīstītas prasmes strādāt ar failiem un mapēm, pārbaudīt projekta struktūru 
+un veidot saprotamus rezultātu paziņojumus. Papildus tika nostiprinātas prasmes sadalīt programmu 
+funkcijās un izvērtēt failu nosaukumu kvalitāti.
 
 ---
 
 # 3. Darba konteksts
 
-Hidrojot PD17 uzdevumu, es analizēju vienkāršu lineāru skriptu, kas aprēķināja atradumu svaru kopējo un vidējo vērtību. Šis bija pasniedzēja sagatavotais sākotnējais kods, kas demonstrēja tipiskas iesācēju kļūdas. Mana uzdevums bija pārveidot šo skriptu par labi strukturētu projektu, izmantojot saprotamus mainīgo nosaukumus, funkcijas, komentārus un dokumentāciju.
+Šajā praktiskajā darbā tika analizēts mācību projekts PD18 — mapes analizators un projekta kvalitātes 
+pārbaudītājs. Tas bija paša izstrādāts mācību projekts, kas tika veidots, izpildot vingrinājumus no 
+sagataves. Darba uzdevums bija pakāpeniski izveidot Python programmu, kas pārbauda projekta mapes 
+struktūru, saskaita failus, atrod problēmas failu nosaukumos un gala variantā strādā ar Tkinter grafisko 
+logu. Projekts tika papildināts ar atskaiti, ekrānuzņēmumiem un pašvērtējumu.
 
 ---
 
 # 4. Sākotnējais stāvoklis
 
-Pirms darba uzsākšanas sistēma atradās šādā stāvoklī:
-
-- **Dokumentācija nebija pieejama** - kodā nebija docstring, trūka README.md faila
-- **Bija zināmas problēmas** - neskaidri mainīgo nosaukumi (x, y, z), bezjēdzīgs skaitītājs, lieki komentāri
-- **Bija tehniskais parāds** - kods nebija sadalīts funkcijās, trūka datu validācijas un kļūdu apstrādes
-- **Nebija izmaiņu pieprasījumu** - uzdevums tika dots kā mācību projekts
-- **Nebija nepieciešama migrācija** - darbs notika vienā vidē
-
-Sākotnējais kods bija lineārs skripts, kas darbojās, bet bija grūti lasāms, uzturams un paplašināms.
+Pirms darba uzsākšanas projekts vēl nebija izveidots pilnā apjomā. Bija pieejama uzdevuma sagatave ar prasībām, 
+vingrinājumiem un atskaites struktūru, taču programma vēl neeksistēja. Bija skaidri definēta mapju struktūra, 
+prasība izmantot moduli os un nepieciešamība izveidot gala risinājumu ar Tkinter logu. Sākotnēji galvenie 
+izaicinājumi bija saprast, kā soli pa solim pārbaudīt mapi, kā atšķirt failus no mapēm un kā strukturēt kodu 
+funkcijās.
 
 ---
 
@@ -58,429 +49,807 @@ Sākotnējais kods bija lineārs skripts, kas darbojās, bet bija grūti lasāms
 
 ## 5.1 Uzdevums 1
 
-Pārveidot kodu [`vng01_slikti_nosaukumi.py`](./pielikumi/vng01_slikti_nosaukumi.py) tā, 
-lai mainīgo nosaukumi būtu saprotami (izmanto snake_kase).
-Rezultātu saglabāt failā vng01_laboti_nosaukumi.py
-[`vng01_laboti_nosaukumi.py`](./pielikumi/vng01_laboti_nosaukumi.py)
-
-### Ko darīju
-Analizēju sākotnējo kodu atbilstībai PEP 8 formātam (snake_case stils).
-
-### Kā veicu darbu
-Tika mainīti mainīgo nosaukumi un pārveidoti funkcijas print() argumenti, lai saprastu to 
-vērtības, kā arī pievienoti komentāri, lai saprastu, ko šī programma dara.
+Pirmajā posmā tika izveidota darba vide un noteikta projekta mapes struktūra. Tika izveidotas mapes PD18, 
+Pielikumi un atteli, kā arī fails atskaite_PD18.md. Tika pārbaudīts, kā ar Python un os moduli noteikt 
+pašreizējo darba mapi un izvadīt to ekrānā. Rezultātā tika sagatavota vide turpmākajiem vingrinājumiem un p
+ārbaudīts, ka programma spēj korekti noteikt darba atrašanās vietu.
 
 ### Rezultāts
+
+![Rezultāts](atteli/vng01.png)
+
+[`vng01.py`](./pielikumi/vng01.py)
 
 ```python id="p62h2r"
 
 # Programmas "Arheoloģisko izrakumu analizators" darbības rezultātu parādīšanas piemērs
 
-atradumu_skaits = 5
-kopējais_svars = 427
-vecākais_vecums = 1200
+''' noskaidro pašreizējo darba karti un izvada to uz ekrāna '''
+import os
 
-print("\nARHEOLOĢISKO IZRAKUMU ANALIZĀCIJAS REZULTĀTI\n")
-print("Atradumu skaits: ", atradumu_skaits)
-print("Kopējais svars: ", kopējais_svars)
-print("Vecākais vecums: ", vecākais_vecums)
+print("\nPašreizējā darba karte:", os.getcwd())
 print()
 ```
 ---
 
 ## 5.2 Uzdevums 2
 
-Nepieciešams analizēt sākotnējo programmu pēc loģikas un atbilstības 
-PEP 8 komentāru rakstīšanas noteikumiem, kā arī izlabot kodu:
-
-```python id="p62h2r"  
-atradumu_skaits = 0
-
-atradumu_skaits = atradumu_skaits + 1  # Pieskaita viens
-print(atradumu_skaits)  # Izvada atradumu skaitu
-
-if atradumu_skaits > 0:
-    print("Ir atradumi")  # Izvada tekstu
-    print("Nav atradumu")
-```
-
-### Ko darīju
-
-Es analizēju sākotnējā koda loģiku un atklāju, ka skaitītājam šajā programmā 
-nav jēgas, jo vērtība tiek noteikta jau sākotnēji. Tāpat es analizēju komentārus 
-pēc nepieciešamības un liekuma kritērijiem, saskaņā ar PEP 8 noteikumiem.
-
-### Kā veicu darbu
-
-1. Noņēmu skaitītāju - atradumu_skaits = atradumu_skaits + 1 , jo stingri 
-   noteiktā mainīgā vērtība padara skaitītāja palielināšanu bezjēdzīgu.
-
-2. Izlaboju izvades loģiku - pievienoju else zaru gadījumam, kad atradumu 
-   nav (mainīgā vērtība ir 0).
-
-3. Izdzēsu liekos komentārus - noņēmu komentārus, kas izskaidroja acīmredzamu 
-   sintaksi.
-
-4. Pievienoju vienīgo nepieciešamo komentāru - noformēju to kā docstring ar 
-   trīskārtīgām pēdiņām, kas izskaidro programmas mērķi, nevis tās acīmredzamo 
-   sintaksi un loģiku.
+Otrajā etapā es izveidoju programmu, kas parāda pašreizējās mapes saturu. Es pieslēdzu os moduli, 
+lai varētu strādāt ar failu sistēmu. Ar funkciju os.listdir() es nolasīju visu pašreizējās mapes 
+saturu un saglabāju to sarakstā satura_saraks. Pēc tam es izveidoju ciklu for elements in satura_saraks, 
+kas katru elementu (gan failu, gan mapi) izvadīja jaunā rindā. Tā kā programma vienkārši parāda visu, 
+kas atrodas mapē, bez papildu pārbaudēm, es izvēlējos "Tips: Izpētīt rezultātu" — man nebija jāraksta 
+sarežģīta loģika, tikai jāizmanto esošās os.listdir() iespējas. Šī programma ir noderīga, lai ātri 
+apskatītos, kādi faili un mapes atrodas darba direktorijā. Vēlāk, kad veidoju gala programmu, šo pašu 
+principu izmantoju, lai apstaigātu mapes un skaitītu failus.
 
 ### Rezultāts
 
-[`vng02_komentari.py`](./pielikumi/vng02_komentari.py)
+![Rezultāts](atteli/vng02.png)
+
+[`vng03.py`](./pielikumi/vng03.py)
 
 ```python id="p62h2r"    
-"""Programmas loģika, lai paziņotu arheologam, vai attiecīgajā vietā
-ir atradumi un cik to ir.
-"""
+'''Izveido programmu, kas:
+1. nolasa pašreizējās mapes saturu;
+2. ar ciklu izvada visus atrastos elementus;
+3. katru failu vai mapi parāda jaunā rindā.'''
 
-atradumu_skaits = 2
+import os
 
-# atradumu_skaits = atradumu_skaits + 1
-#print(atradumu_skaits)
-
-if atradumu_skaits > 0:
-    print("Ir atradumi")
-    print(atradumu_skaits)
-else:    
-    print("Nav atradumu")
+satura_saraks = os.listdir()
+print("Pašreizējās mapes saturs:\n")
+for elements in satura_saraks:
+    print(elements)
+print()
 ```
 ---
 
 ## 5.3 Uzdevums 3
 
-Sākotnējā programma ir dota:
-
-```python id="p62h2r"   
-dati = [15, 120, 30, 250, 12]
-
-kopejais_svars = sum(dati)
-videjais_svars = kopejais_svars / len(dati)
-
-print("Kopējais svars:", kopejais_svars)
-print("Vidējais svars:", videjais_svars)
-```
-Pārveido kodu tā, lai tajā būtu vismaz trīs funkcijas:
-```python id="p62h2r" 
-def nolasit_datus():
-...
-def analizet_datus(dati):
-...
-def paradit_rezultatu(rezultati):
-...
-```
-### Ko darīju
-
-Es analizēju sākotnējo kodu, kas bija vienkāršs lineārs skripts. Tajā 
-nebija funkciju, nebija klases, un kods izpildījās secīgi no augšas uz 
-leju. Es sapratu, ka šādu kodu nevar atkārtoti izmantot, to ir grūti 
-testēt, un tas neatbilst modulārās programmēšanas principiem.
-
-Es arī pamanīju, ka sākotnējā kodā trūkst kļūdu apstrādes (piemēram, 
-dalīšanas ar nulli, ja datu saraksts ir tukšs), trūkst dokumentācijas, 
-un tas nav sadalīts 
-loģiskos blokos.
-
-### Kā veicu darbu
-
-1. Izveidoju klasi SvaruAnalizators - lai apvienotu visas saistītās 
-   darbības vienuviet.
-2. Pievienoju trīs metodes (funkcijas) klases iekšpusē:
-   * kopejais_svars() - aprēķina atradumu kopējo svaru
-   * videjais_svars() - aprēķina atradumu vidējo svaru
-   * izvadit() - izvada rezultātus uz ekrāna
-3. Pievienoju dokumentāciju (docstring) - klasei un katrai metodei, lai 
-   izskaidrotu to mērķi.
-4. Pievienoju konstruktoru __init__ - lai nodotu datus klasē, veidojot 
-   objektu.
-5. Pievienoju bloku if __name__ == "__main__" - lai kodu varētu izmantot
-   kā moduli vai palaist tieši.
+Trešajā etapā es izveidoju programmu, kas ne tikai parāda mapes saturu, bet arī atšķir failus no mapēm. 
+Es izmantoju funkciju os.getcwd(), lai noteiktu pašreizējo darba mapi. Pēc tam ar os.scandir() es iegūju 
+visu mapes elementu sarakstu. Atšķirībā no os.listdir(), os.scandir() sniedz vairāk informācijas par katru 
+elementu. Ciklā es pārbaudīju katru elementu: ja entry.is_file() ir patiess, tad elements ir fails; ja 
+entry.is_dir() ir patiess, tad elements ir mape. Šī programma ir pamats turpmākajām struktūras pārbaudēm, 
+piemēram, lai atrastu mapes "Pielikumi" un "atteli". Šo pašu principu es izmantoju arī gala programmā ar 
+Tkinter, lai analizētu lietotāja izvēlēto mapi.
 
 ### Rezultāts
 
-[`vng03_funkcijas.py`](./pielikumi/vng03_funkcijas.py)
+![Rezultāts](atteli/vng03.png)
+
+[`vng03.py`](./pielikumi/vng03.py)
 
 ```python id="p62h2r" 
 
-"""Programma atradumu svaru analīzei - aprēķina kopējo un vidējo svaru."""
+'''Izveido programmu, kas pārskata pašreizējās mapes saturu un pie 
+katra elementa parāda, vai tas ir fails vai mape.'''
 
-class SvaruAnalizators:
-    """Analizē atradumu svarus un veic nepieciešamos aprēķinus."""
-    
-    def __init__(self, dati):
-        self.dati = dati
-    
-    def kopejais_svars(self):
-        """Aprēķina un atgriež kopējo svaru."""
-        return sum(self.dati)
-    
-    def videjais_svars(self):
-        """Aprēķina un atgriež vidējo svaru."""
-        return sum(self.dati) / len(self.dati)
-    
-    def izvadit(self):  # ← Теперь внутри класса (с отступом)
-        """Izvada aprēķinu rezultātus konsolē."""
-        print("Kopējais svars:", self.kopejais_svars())
-        print("Vidējais svars:", self.videjais_svars())
+import os
 
-# Programmas palaišana
+def check_directory_contents():
+    current_directory = os.getcwd()
+    
+    with os.scandir(current_directory) as entries:
+        for entry in entries:
+            if entry.is_file():
+                print(f"{entry.name} -- Fails")
+            elif entry.is_dir():
+                print(f"{entry.name} -- Mape")
+
 if __name__ == "__main__":
-    dati = [15, 120, 30, 250, 12]
-    analizators = SvaruAnalizators(dati)
-    analizators.izvadit()
+    print()
+    check_directory_contents()
+    print()
 ```
 ---
 
 ## 5.2 Uzdevums 4
 
-Ir jāanalizē iepriekšējā uzdevuma programma, lai nodrošinātu atbilstību 
-PEP 8 dokumentācijas rakstīšanas noteikumiem - docstring.
-
-Oriģinālā programma:
-
-[`vng03_funkcijas.py`](./pielikumi/vng03_funkcijas.py)
-
-### Ko darīju
-
-Es analizēju pirmkodu un pamanīju, ka pirmkodā ir nepilnīga dokumentācija, 
-kas ir pretrunā ar PEP 8 (docstrng) prasībām, kā arī trūkst kļūdu apstrādes — 
-dalīšanas ar nulli, ja datu saraksts ir tukšs.
-
-### Kā veicu darbu
-
-1. Pievienota moduļa dokumentācijas rinda (faila galvenē).
-   Tagad ir skaidrs, ko modulis dara. Norādīts, ka to var importēt citās programmās.
-
-2. Pievienoju importu `from typing import List`.
-   Iespēja izmantot tipu norādes (type hints). IDE tagad var pārbaudīt datu tipu pareizību.
-
-3. Pievienoju tipu norādes (type hints) `__init__` metodē.
-   Kods kļuva pašdokumentējošs. `dati: List[float]` - skaidri norādīts, ka parametram `dati` jābūt skaitļu sarakstam; `-> None` - norādīts, ka metode neko neatgriež.
-
-4. Paplašināju `__init__` metodes docstring.
-   Parametra `Args` apraksts - kas jānodod metodē, un `Raises` apraksts - kādu kļūdu metode var izraisīt un kad.
-
-5. Pievienoju tukša saraksta kļūdas apstrādi.
-   Programma nemēģinās dalīt ar nulli, aprēķinot vidējo vērtību, un lietotājs saņems saprotamu kļūdas paziņojumu.
+Ceturtajā etapā es izveidoju programmu, kas pārbauda projekta obligāto struktūru. Es uzrakstīju funkciju 
+check_items(), kurai var nodot direktoriju, pārbaudāmo elementu sarakstu un elementa tipu (mape vai fails). 
+Funkcija izmanto os.path.exists(), lai pārbaudītu, vai katrs elements eksistē. Atkarībā no item_type tiek 
+izvadīts atbilstošs paziņojums — vai nu par mapi, vai par atskaites failu. Es izmantoju simbolus ✅ un ❌, 
+lai rezultāti būtu vizuāli uztverami. Šī funkcija ir atkārtoti izmantojama — to pašu funkciju var izsaukt 
+gan mapēm, gan failiem. Programmas galvenajā daļā es pārbaudu trīs būtiskus elementus: mapes "Pielikumi" 
+un "atteli", kā arī failu "atskaite_PD18.md". Šī programma ir pamats projekta kvalitātes pārbaudei. Vēlāk, 
+veidojot gala programmu ar Tkinter, es importēju šo pašu funkciju, lai pārbaudītu lietotāja izvēlētās mapes 
+struktūru.
 
 ### Rezultāts
 
-[`vng04_funkcijas.py`](./pielikumi/vng04_funkcijas.py)
+![Rezultāts](atteli/vng04.png)
+
+[`vng04.py`](./pielikumi/vng04.py)
 
 ```python id="p62h2r"    
-"""Šis modulis satur klasi SvaruAnalizators, kas aprēķina
-kopējo un vidējo svaru no datu saraksta. Moduli var
-importēt un izmantot citās programmās."""
+'''
+Izveido programmu, kas pārbauda, vai projektā eksistē:
+    mape Pielikumi;
+    mape atteli;
+    fails atskaite_PD18.md.
+Programmai jāparāda skaidri paziņojumi.
+'''
 
-from typing import List
-class SvaruAnalizators:
-    """Analizē atradumu svarus un veic nepieciešamos aprēķinus."""
-    
-    def __init__(self, dati: List[float]) -> None:
-        """Inicializē analizatoru ar datu sarakstu.
-        Args:
-            dati: Skaitļu saraksts (atradumu svari gramos)
-        Raises:
-            ValueError: Ja datu saraksts ir tukšs
-        """
-        if not dati:
-            raise ValueError("Datu saraksts nedrīkst būt tukšs")
-        self.dati = dati
-    
-    def kopejais_svars(self):
-        """Aprēķina un atgriež kopējo svaru."""
-        return sum(self.dati)
-    
-    def videjais_svars(self):
-        """Aprēķina un atgriež vidējo svaru."""
-        return sum(self.dati) / len(self.dati)
-    
-    def izvadit(self):  # ← Теперь внутри класса (с отступом)
-        """Izvada aprēķinu rezultātus konsolē."""
-        print("\nKopējais svars:", self.kopejais_svars())
-        print("Vidējais svars:", self.videjais_svars())
-        print()
+import os
 
-# Programmas palaišana
+def check_items(directory, items, item_type='mape'):
+    '''Pārbauda, vai norādītajā direktorijā eksistē dotie elementi (mapes vai faili)'''
+    
+    results = {}
+    for item in items:
+        path = os.path.join(directory, item)
+        if os.path.exists(path):
+            if item_type == 'mape':
+                print(f'✅ Mape "{item}" atrasta')
+            else:
+                print(f'✅ Atskaites fails "{item}" atrasts')
+        else:
+            if item_type == 'mape':
+                print(f'❌ Mape "{item}" nav atrasta')
+            else:
+                print(f'⚠️ Atskaites fails "{item}" nav atrasts')
+    return results            
+                
+
 if __name__ == "__main__":
-    dati = [15, 120, 30, 250, 12]
-    analizators = SvaruAnalizators(dati)
-    analizators.izvadit()
+    """
+    Moduļa testēšana. Šis kods izpildās tikai tad, kad moduli palaiž tieši
+    (nevis importē kā moduli).
+    """
+    my_folders = ['Pielikumi', 'atteli']
+    my_files = ['atskaite_PD18.md']
+    
+    print()
+    # Pārbauda mapes
+    folder_results = check_items('.', my_folders, 'mape')
+    
+    # Pārbauda failus
+    file_results = check_items('.', my_files, 'fails')
+    print()
 ```
 ---
 
 ## 5.2 Uzdevums 5
 
-Nepieciešams analizēt sākotnējo programmu pēc loģikas un atbilstības 
-PEP 8 komentāru rakstīšanas noteikumiem, kā arī izlabot kodu:
-
-```python id="p62h2r"  
-atradumu_skaits = 0
-
-atradumu_skaits = atradumu_skaits + 1  # Pieskaita viens
-print(atradumu_skaits)  # Izvada atradumu skaitu
-
-if atradumu_skaits > 0:
-    print("Ir atradumi")  # Izvada tekstu
-    print("Nav atradumu")
-```
-
-### Ko darīju
-
-Es analizēju sākotnējā koda loģiku un atklāju, ka skaitītājam šajā programmā 
-nav jēgas, jo vērtība tiek noteikta jau sākotnēji. Tāpat es analizēju komentārus 
-pēc nepieciešamības un liekuma kritērijiem, saskaņā ar PEP 8 noteikumiem.
-
-### Kā veicu darbu
-
-1. Noņēmu skaitītāju - atradumu_skaits = atradumu_skaits + 1, jo stingri 
-   noteiktā mainīgā vērtība padara skaitītāja palielināšanu bezjēdzīgu.
-
-2. Izlaboju izvades loģiku - pievienoju else zaru gadījumam, kad atradumu 
-   nav (mainīgā vērtība ir 0).
-
-3. Izdzēsu liekos komentārus - noņēmu komentārus, kas izskaidroja acīmredzamu 
-   sintaksi.
-
-4. Pievienoju vienīgo nepieciešamo komentāru - noformēju to kā docstring ar 
-   trīskārtīgām pēdiņām, kas izskaidro programmas mērķi, nevis tās acīmredzamo 
-   sintaksi un loģiku.
+Piektajā etapā es izveidoju programmu, kas pārbauda failu nosaukumu kvalitāti — vai tajos nav atstarpju. 
+Šoreiz es neaprobežojos tikai ar pašreizējo mapi, bet izmantoju os.walk(), lai pārbaudītu VISUS failus 
+VISĀS apakšmapēs. Šī ir būtiska atšķirība no iepriekšējiem uzdevumiem — programma iedziļinās katrā apakšmapē 
+jebkurā dziļumā. Katram failam es pārbaudu, vai tā nosaukumā ir atstarpe (' ' in file). Ja atstarpe ir, es 
+pievienoju pilnu ceļu uz šo failu sarakstam files_with_spaces un izvadu brīdinājumu. Programma atgriež sarakstu 
+ar visiem problemātiskajiem failiem, lai to varētu izmantot citās programmās. Beigās tiek parādīts kopsavilkums — 
+cik faili ar atstarpēm atrasti un kādi tie ir. Šī programma ir ļoti noderīga, lai uzturētu projektu kārtībā, jo 
+atstarpes failu nosaukumos var radīt problēmas darbā ar termināli un citām sistēmām. Vēlāk šo funkciju importēju 
+gala programmā ar Tkinter.
 
 ### Rezultāts
 
-[`vng02_komentari.py`](./pielikumi/vng02_komentari.py)
+![Rezultāts](atteli/vng05.png)
+
+[`vng05.py`](./pielikumi/vng05.py)
 
 ```python id="p62h2r"    
-"""Programmas loģika, lai paziņotu arheologam, vai attiecīgajā vietā
-ir atradumi un cik to ir.
+"""
+Modulis failu nosaukumu pārbaudei visā projektu struktūrā.
+Pārbauda visus failus galvenajā mapē un visās apakšmapēs.
 """
 
-atradumu_skaits = 2
+import os
 
-# atradumu_skaits = atradumu_skaits + 1
-#print(atradumu_skaits)
+def check_for_spaces(directory):
+    
+    """Pārbauda, vai failu nosaukumos ir atstarpes VISĀS apakšmapēs."""
+    
+    files_with_spaces = []
+    
+    # os.walk() apstaigā visu direktoriju un visas apakšdirektorijas
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if ' ' in file:
+                full_path = os.path.join(root, file)
+                files_with_spaces.append(full_path)
+                print(f'BRĪDINĀJUMS: Faila nosaukumā atrasta atstarpe:\n {full_path}')
+    
+    if not files_with_spaces:
+        print('Failu nosaukumos atstarpes nav atrastas.')
+    
+    return files_with_spaces
 
-if atradumu_skaits > 0:
-    print("Ir atradumi")
-    print(atradumu_skaits)
-else:    
-    print("Nav atradumu")
+
+if __name__ == "__main__":
+    """
+    Moduļa testēšana. Šis kods izpildās tikai tad, kad moduli palaiž tieši
+    (nevis importē kā moduli).
+    """
+    print()
+    print("Pārbauda visus failus mapē un apakšmapēs...")
+    print("-" * 50)
+    
+    result = check_for_spaces('.')
+    
+    print("-" * 50)
+    if result:
+        print(f"Atrasti {len(result)} faili ar atstarpēm nosaukumos:")
+        for path in result:
+            print(f"  - {path}")
+    print()
 ```
 ---
 
 ## 5.2 Uzdevums 6
 
-Izveidojiet programmu svara aprēķināšanai, izmantojot šādas funkcijas:
-
-```python id="p62h2r"  
-def nolasit_datus():
-def aprekinat_kopejo_svaru(dati):
-def aprekinat_videjo_svaru(dati):
-def paradit_rezultatu(kopejais_svars, videjais_svars):
-def main():
-```
-Sagatavot programmas dokumentāciju saskaņā ar PEP 8 vadlīnijām.
-
-### Ko darīju
-
-Es analizēju sākotnējā koda loģiku un atklāju, ka skaitītājam šajā programmā 
-nav jēgas, jo vērtība tiek noteikta jau sākotnēji. Tāpat es analizēju komentārus 
-pēc nepieciešamības un liekuma kritērijiem, saskaņā ar PEP 8 noteikumiem.
-
-### Kā veicu darbu
-
-1. Pievienoju pilnu dokumentāciju - moduļa sākumā, klasei, katrai metodei un funkcijām, izmantojot docstring 
-2. formātu ar parametru, atgriežamo vērtību un iespējamo kļūdu aprakstiem.
-   noteiktā mainīgā vērtība padara skaitītāja palielināšanu bezjēdzīgu.
-
-3. Ieviesu datu tipu pārbaudi - pievienoju importu from typing import List un tipu norādes visām metodēm, kas 
-4. padara kodu pašdokumentējošu un ļauj IDE pārbaudīt lietošanas pareizību.
-
-5. Pievienoju aizsardzību pret nekorektiem datiem - klases konstruktorā ieviesu divas pārbaudes:
-   * Tukša saraksta pārbaudi (izmet ValueError)
-   * Katra elementa pārbaudi, lai pārliecinātos, ka visas vērtības ir skaitļi (izmet TypeError)
-
-6. Organizēju kodu loģiskos blokos:
-   * Funkcija nolasit_datus() - atbild par datu iegūšanu
-   * Funkcija main() - vada programmas loģiku
-   * Klase SvaruAprekins - veic aprēķinus
-   * Bloks if __name__ == "__main__" - ļauj moduli izmantot gan neatkarīgi, gan importēt citās programmās
-
-7. Pievienoju kļūdu apstrādi - funkcijā main() izmantota try/except konstrukcija ValueError kļūdas uztveršanai, 
-   kas novērš programmas avārijas apstāšanos, ja datu saraksts ir tukšs.
+Sestajā etapā es izveidoju programmu, kas saskaita failus pēc to tipa. Šī programma atšķiras no 
+iepriekšējām ar to, ka tā spēj saņemt mapes nosaukumu no ārpuses — lietotājs var ievadīt, piemēram, 
+"PD18", un programma pati atradīs šo mapi. Es uzrakstīju funkciju count_files_by_type(), kas izmanto 
+os.walk() lai apstaigātu visu mapi un apakšmapes, un ar .endswith() pārbauda katra faila paplašinājumu. 
+Rezultāts tiek atgriezts vārdnīcā ar skaitītājiem Python, Markdown un attēlu failiem. Papildus es uzrakstīju 
+funkciju find_pd_folder(), kas meklē PD mapi pašreizējā mapē un visās augšējās mapēs — tā paceļas augšup 
+pa direktoriju koku, līdz atrod vajadzīgo mapi. Programma var strādāt divos režīmos: ja lietotājs ievada 
+pilnu ceļu, to izmanto tieši; ja ievada, piemēram, "PD18", programma to meklē pati. Šī programma ir ērta, 
+jo lietotājam nav jāraksta garie ceļi. Vēlāk šo pašu funkciju count_files_by_type() es importēju gala 
+programmā ar Tkinter.
 
 ### Rezultāts
 
-[`pd17_gala_versija.py`](./pielikumi/pd17_gala_versija.py)
+![Rezultāts](atteli/vng06.png)
+
+[`vng06.py`](./pielikumi/vng06.py)
 
 ```python id="p62h2r"    
-"""Šis modulis satur klasi SvaruAprekins, kas aprēķina
-kopējo un vidējo svaru no datu saraksta. Moduli var
-importēt un izmantot citās programmās."""
+"""
+Modulis failu skaitīšanai pēc tipa visā projektu struktūrā.
+Var saņemt mapes nosaukumu no ārpuses (PD01, PD02, ..., PD18).
+"""
 
-from typing import List
+import os
 
-class SvaruAprekins:
-    """Analizē atradumu svarus un veic nepieciešamos aprēķinus."""
+def count_files_by_type(directory):
+    """Saskaita failus pēc to paplašinājuma visā direktorijā un visās apakšdirektorijās."""
     
-    def __init__(self, dati: List[float]) -> None:
-        """Inicializē analizatoru ar datu sarakstu.
-        Args:
-            dati: Skaitļu saraksts (atradumu svari gramos)
-        Raises:
-            ValueError: Ja datu saraksts ir tukšs
-        """
-        if not dati:
-            raise ValueError("Datu saraksts nedrīkst būt tukšs")
+    python_count = 0
+    markdown_count = 0
+    image_count = 0
     
-        # Katra elementa pārbaude, vai tas ir skaitlis
-        for svars in dati:
-            if not isinstance(svars, (int, float)):
-                raise TypeError(f"'{svars}' nav skaitlis!")
+    # Pārbauda, vai mape eksistē
+    if not os.path.exists(directory):
+        return None
     
-        self.dati = dati
-
-    def aprekinat_kopejo_svaru(self):
-        """Aprēķina un atgriež kopējo svaru."""
-        return sum(self.dati)
+    # os.walk() apstaigā visu direktoriju un visas apakšdirektorijas
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.endswith('.py'):
+                python_count += 1
+            elif file.endswith('.md'):
+                markdown_count += 1
+            elif file.endswith('.png') or file.endswith('.jpg') or file.endswith('.jpeg'):
+                image_count += 1
     
-    def aprekinat_videjo_svaru(self):
-        """Aprēķina un atgriež vidējo svaru."""
-        return sum(self.dati) / len(self.dati)
-    
-    def paradit_rezultatu(self):  
-        """Izvada aprēķinu rezultātus konsolē."""
-        print("\nAtradumu skaits:", len(self.dati))
-        print("Kopējais svars:", float(self.aprekinat_kopejo_svaru()))
-        print("Vidējais svars:", self.aprekinat_videjo_svaru())
-        print()
+    return {
+        'python': python_count,
+        'markdown': markdown_count,
+        'images': image_count
+    }
 
 
-def nolasit_datus():
-    """Nolasa datus no sagatavota saraksta.
-    
-    Returns:
-        List[float]: Skaitļu saraksts (svari gramos)
+def find_pd_folder(folder_name, start_path='.'):
     """
-    # Datu saraksts atbilstoši uzdevuma prasībai
-    atradumu_svari = [15, 120, 30, 250, 12]
-    return atradumu_svari
-
-
-def main():
-    """Galvenā programmas funkcija - vada programmas darbību."""
-    svari = nolasit_datus()
+    Meklē PD mapi pašreizējā mapē un visās augšējās mapēs.
+    """
+    current = os.path.abspath(start_path)
     
-    # Kļūdas apstrāde tukšā sarakstā
-    try:
-        analizators = SvaruAprekins(svari)
-        analizators.paradit_rezultatu()
-    except ValueError as e:
-        print(f"\nKļūda: {e}\n")
+    while True:
+        test_path = os.path.join(current, folder_name)
+        if os.path.exists(test_path) and os.path.isdir(test_path):
+            return test_path
+        
+        parent = os.path.dirname(current)
+        if parent == current:
+            break
+        current = parent
+    
+    return None
 
-# Programmas palaišana
+
 if __name__ == "__main__":
-    main()
+    print()
+    
+    # Prasa lietotājam ievadīt mapes nosaukumu
+    print("Kādu mapi vēlaties pārbaudīt (ar visām apakšmapēm)?")
+    print("Iespējas: PD01, PD02, ..., PD18, vai pilns ceļš")
+    print("-" * 40)
+    
+    user_input = input("Ievadiet mapes nosaukumu: ").strip()
+    
+    # Nosaka, kuru mapi pārbaudīt
+    if user_input.startswith('/') or user_input.startswith('.') or ':' in user_input or user_input.startswith('~'):
+        # Pilns ceļš
+        search_path = os.path.expanduser(user_input)
+        display_name = search_path
+    else:
+        # Meklē PD mapi
+        found_path = find_pd_folder(user_input)
+        if found_path:
+            search_path = found_path
+            display_name = user_input  # Parāda tikai nosaukumu, nevis pilnu ceļu
+        else:
+            search_path = user_input
+            display_name = user_input
+    
+    # Pārbauda, vai mape eksistē
+    if not os.path.exists(search_path):
+        print(f"\n❌ KĻŪDA: Mape '{display_name}' nav atrasta!")
+        print(f"   Meklēts: {search_path}")
+    else:
+        # Skaita failus
+        result = count_files_by_type(search_path)
+        
+        # Izvada rezultātu vienkāršā formātā
+        print()
+        print(f"Skatās mapē: {display_name}")
+        print("──────────────────────────────────────────────")
+        print(f"Python faili: {result['python']}")
+        print(f"Markdown faili: {result['markdown']}")
+        print(f"Attēlu faili: {result['images']}")
+    
+    print()
+```
+---
+
+## 5.2 Uzdevums 7
+
+Septītajā etapā es apvienoju visas iepriekšējās programmas vienā — izveidoju moduli, kas importē 
+funkcijas no vng04.py, vng05.py un vng06.py. Tā vietā, lai rakstītu kodu no jauna, es izmantoju 
+jau esošās funkcijas: parbaudit_elementus (struktūras pārbaudei), skaitit_failus (failu skaitīšanai) 
+un parbaudit_nosaukumus (nosaukumu pārbaudei). Es uzrakstīju funkciju parbaudit_strukturu(), kas 
+izmanto parbaudit_elementus, lai pārbaudītu obligātās mapes "Pielikumi" un "atteli", kā arī failu 
+"atskaite_PD18.md". Funkciju find_pd_folder() es pārcēlu no vng06.py, lai programma varētu atrast 
+PD mapi, ja lietotājs ievada tikai nosaukumu (piemēram, "PD18"). Galvenajā programmas daļā es izveidoju 
+lietotājam draudzīgu interfeisu: programma prasa ievadīt mapes nosaukumu, pati to atrod (ja vajag), 
+un pēc tam secīgi izsauc visas trīs pārbaudes. Beigās tiek izvadīti pabeigšanas statusi. Šī programma 
+ir pilnīgs projekta analizators, kas apvieno visus iepriekšējos uzdevumus vienā veselumā. Vēlāk šo pašu 
+loģiku es izmantoju, veidojot grafisko interfeisu ar Tkinter.
+
+### Rezultāts
+
+![Rezultāts](atteli/vng07.png)
+
+[`vng07.py`](./pielikumi/vng07.py)
+
+```python id="p62h2r"    
+"""
+Gala programma PD18 — Mapes analizators un projekta kvalitātes pārbaudītājs.
+Apvieno struktūras pārbaudi, failu skaitīšanu un nosaukumu pārbaudi.
+"""
+
+import os
+
+# Importē funkcijas no esošajiem failiem ar precīziem nosaukumiem
+from vng04 import check_items as parbaudit_elementus
+from vng05 import check_for_spaces as parbaudit_nosaukumus
+from vng06 import count_files_by_type as skaitit_failus
+
+
+def parbaudit_strukturu(directory='.'):
+    """
+    Pārbauda projekta struktūru.
+    Izmanto funkciju no vng04.py
+    
+    Parametri
+    ---------
+    directory : str, optional
+        Ceļš uz mapi, kurā veikt pārbaudi (noklusējums - pašreizējā mape)
+    
+    Atgriež
+    -------
+    None
+        Rezultāti tiek izvadīti konsolē, nevis atgriezti
+    """
+    my_folders = ['Pielikumi', 'atteli']
+    my_files = ['atskaite_PD18.md']
+    
+    # Pārbauda mapes un failus
+    parbaudit_elementus(directory, my_folders, 'mape')
+    parbaudit_elementus(directory, my_files, 'fails')
+
+
+def find_pd_folder(folder_name, start_path='.'):
+    """
+    Meklē PD mapi pašreizējā mapē un visās augšējās mapēs.
+    
+    Parametri
+    ---------
+    folder_name : str
+        Mapes nosaukums (piemēram, 'PD18')
+    start_path : str, optional
+        Kur sākt meklēšanu (noklusējums - pašreizējā mape)
+    
+    Atgriež
+    -------
+    str or None
+        Pilnu ceļu uz mapi, ja atrasta, vai None, ja nav atrasta
+    """
+    current = os.path.abspath(start_path)
+    
+    while True:
+        test_path = os.path.join(current, folder_name)
+        if os.path.exists(test_path) and os.path.isdir(test_path):
+            return test_path
+        
+        parent = os.path.dirname(current)
+        if parent == current:  # Sasniedzām saknes mapi
+            break
+        current = parent
+    
+    return None
+
+
+if __name__ == "__main__":
+    """
+    Galvenā programmas daļa.
+    Izpildās tikai tad, kad skriptu palaiž tieši (nevis importē kā moduli).
+    """
+    print()
+    print("=" * 50)
+    print("PROJEKTA PĀRBAUDES ATSKAITE")
+    print("=" * 50)
+    
+    print("\nKādu mapi vēlaties pārbaudīt?")
+    print("Iespējas: PD01, PD02, ..., PD18, vai pilns ceļš")
+    print("-" * 40)
+    
+    user_input = input("Ievadiet mapes nosaukumu: ").strip()
+    
+    # Nosaka, kuru mapi pārbaudīt
+    if user_input.startswith('/') or user_input.startswith('.') or ':' in user_input or user_input.startswith('~'):
+        search_path = os.path.expanduser(user_input)
+        display_name = search_path
+    else:
+        found_path = find_pd_folder(user_input)
+        if found_path:
+            search_path = found_path
+            display_name = user_input
+        else:
+            search_path = user_input
+            display_name = user_input
+    
+    # Pārbauda, vai mape eksistē
+    if not os.path.exists(search_path):
+        print(f"\n❌ KĻŪDA: Mape '{display_name}' nav atrasta!")
+        print(f"   Meklēts: {search_path}")
+    else:
+        print(f"\nSkatās mapē: {display_name}")
+        print("──────────────────────────────────────────────")
+        
+        # Izsauc trīs galvenās funkcijas (izvads notiek to iekšpusē)
+        parbaudit_strukturu(search_path)
+        skaitit_failus(search_path)
+        parbaudit_nosaukumus(search_path)
+        
+        # Izvada pabeigšanas statusu
+        print()
+        print("Struktūras pārbaude pabeigta.")
+        print("Failu skaitīšana pabeigta.")
+        print("Nosaukumu pārbaude pabeigta.")
+        
+        print("\n" + "=" * 50)
+        print("Pārbaude pabeigta.")
+        print("=" * 50)
+    
+    print()
+```
+---
+
+## 5.2 Uzdevums 8
+
+Astotajā etapā es izveidoju grafigo interfeisu (GUI) savam projekta analizatoram, izmantojot 
+Tkinter bibliotēku. Šis bija pēdējais un vissarežģītākais uzdevums, jo man vajadzēja savienot 
+komandrindas versiju ar logu interfeisu.
+
+Es izveidoju klasi ProjektAnalizators, kas satur visu loga elementus:
+
+- Logu ar nosaukumu "PD18 — Mapes analizators"
+
+- Ievades lauku mapes ceļam (lietotājs var ierakstīt ceļu manuāli)
+
+- Pogu "Izvēlēties mapi" — atver dialoglodziņu mapes izvēlei (filedialog)
+
+- Pogu "Analizēt" — sāk analīzi
+
+- Rezultātu lauku (ScrolledText) ar ritjoslu, kur parādās pārbaudes rezultāti
+
+- Kļūdas paziņojumu — ja mape neeksistē, programma parāda brīdinājumu
+
+Lai izvairītos no koda dublēšanās, es importēju tās pašas funkcijas no vng04.py, vng05.py, vng06.py, 
+ko izmantoju 7. etapā. Funkcija get_folder_stats() izmanto skaitit_failus() un parbaudit_nosaukumus(), 
+lai savāktu visu nepieciešamo informāciju. Funkcija format_results() pārvērš šos datus lasāmā tekstā, 
+ko parāda logā.
+
+Viena no problēmām, ar ko saskāros, bija tā, ka logu dažreiz neredzēju — tas atvērās citā darba virsmā 
+(macOS problēma). Es pievienoju attributes('-topmost', True) un focus_force(), lai logs parādītos 
+priekšplānā.
+
+Rezultātā es saņēmu pilnvērtīgu grafisko programmu, kas:
+
+* Analizē lietotāja izvēlēto mapi (ieskaitot visas apakšmapes)
+
+* Parāda, vai eksistē mapes "Pielikumi" un "atteli"
+
+* Parāda kopējo failu un mapju skaitu
+
+* Parāda Python un attēlu failu skaitu
+
+* Brīdina par atstarpēm failu nosaukumos
+
+Šī programma apvieno visu, ko es iemācījos PD18 praktiskajā darbā: darbu ar os moduli, failu sistēmu, funkcijām, moduļu importu un beidzot — grafiskā interfeisa izveidi.
+
+### Rezultāts
+
+![Rezultāts](atteli/pd18_mapes_analizators.png)
+
+[`pd18_mapes_analizators.py`](./pielikumi/pd18_mapes_analizators.py)
+
+```python id="p62h2r"    
+"""
+Gala programma PD18 ar Tkinter logu — Mapes analizators un projekta kvalitātes pārbaudītājs.
+Izmanto funkcijas no vng04.py, vng05.py, vng06.py.
+"""
+
+import os
+import tkinter as tk
+from tkinter import scrolledtext, messagebox, filedialog
+import subprocess
+
+# Importē jau esošās funkcijas
+from vng04 import check_items as parbaudit_elementus
+from vng05 import check_for_spaces as parbaudit_nosaukumus
+from vng06 import count_files_by_type as skaitit_failus
+
+
+def get_folder_stats(directory):
+    """
+    Analizē norādīto mapi, izmantojot esošās funkcijas.
+    
+    Parametri
+    ---------
+    directory : str
+        Ceļš uz mapi, kuru analizēt
+    
+    Atgriež
+    -------
+    dict
+        Vārdnīca ar analīzes rezultātiem
+    """
+    # Pārbauda, vai mape eksistē
+    if not os.path.exists(directory):
+        return None
+    
+    # 1. Savāc informāciju par mapēm un failiem (izmantojot os.walk)
+    total_files = 0
+    total_folders = 0
+    
+    for root, dirs, files in os.walk(directory):
+        for d in dirs:
+            total_folders += 1
+        for f in files:
+            total_files += 1
+    
+    # 2. Izmanto esošo funkciju no vng06.py failu skaitīšanai
+    file_counts = skaitit_failus(directory)
+    
+    # 3. Pārbauda obligātās mapes (izmantojot os.path, jo vng04 tikai izvada)
+    pielikumi_exists = os.path.exists(os.path.join(directory, 'Pielikumi')) and os.path.isdir(os.path.join(directory, 'Pielikumi'))
+    atteli_exists = os.path.exists(os.path.join(directory, 'atteli')) and os.path.isdir(os.path.join(directory, 'atteli'))
+    
+    # 4. Pārbauda atstarpes nosaukumos (izmantojot esošo funkciju no vng05.py)
+    # Piezīme: funkcija parbaudit_nosaukumus izvada rezultātu, bet arī atgriež sarakstu
+    files_with_spaces = parbaudit_nosaukumus(directory)
+    
+    return {
+        'exists': True,
+        'total_files': total_files,
+        'total_folders': total_folders,
+        'python_files': file_counts.get('python', 0) if file_counts else 0,
+        'markdown_files': file_counts.get('markdown', 0) if file_counts else 0,
+        'image_files': file_counts.get('images', 0) if file_counts else 0,
+        'pielikumi_exists': pielikumi_exists,
+        'atteli_exists': atteli_exists,
+        'files_with_spaces': files_with_spaces if files_with_spaces else []
+    }
+
+def format_results(result, directory):
+    """
+    Formatē analīzes rezultātus lasāmā tekstā.
+    """
+    if result is None:
+        return f"❌ KĻŪDA: Mape '{directory}' neeksistē!"
+    
+    output = ""
+    output += "=" * 50 + "\n"
+    output += "PROJEKTA PĀRBAUDES ATSKAITE\n"
+    output += "=" * 50 + "\n\n"
+    
+    # Mapes esamība
+    output += "✓ Mape eksistē\n"
+    
+    # Obligātās mapes
+    if result['pielikumi_exists']:
+        output += "✓ Mape Pielikumi atrasta\n"
+    else:
+        output += "✗ Mape Pielikumi nav atrasta\n"
+    
+    if result['atteli_exists']:
+        output += "✓ Mape atteli atrasta\n"
+    else:
+        output += "✗ Mape atteli nav atrasta\n"
+    
+    output += "\n"
+    
+    # Failu un mapju skaits
+    output += f"Failu skaits: {result['total_files']}\n"
+    output += f"Mapju skaits: {result['total_folders']}\n"
+    output += f"Python faili: {result['python_files']}\n"
+    output += f"Attēlu faili: {result['image_files']}\n"
+    
+    output += "\n"
+    
+    # Brīdinājumi par atstarpēm nosaukumos
+    output += "Brīdinājumi:\n"
+    if result['files_with_spaces']:
+        for file_path in result['files_with_spaces']:
+            output += f"⚠ Faila nosaukumā atrasta atstarpe:\n   {file_path}\n"
+    else:
+        output += "Nav atrasti faili ar atstarpēm nosaukumos.\n"
+    
+    output += "\n"
+    output += "=" * 50 + "\n"
+    output += "Pārbaude pabeigta.\n"
+    output += "=" * 50
+    
+    return output
+
+class ProjektAnalizators:
+    """
+    Tkinter loga klase projekta analīzei.
+    """
+    
+    def __init__(self):
+        """Inicializē Tkinter logu un visus elementus."""
+        self.root = tk.Tk()
+        
+        
+        
+        self.root.title("PD18 — Mapes analizators")
+        self.root.geometry("750x650")
+        self.root.resizable(True, True)
+        
+        # self.root.attributes('-topmost', True)
+        # self.root.lift()
+        self.root.focus_force()
+          
+        # Galvenais rāmis
+        main_frame = tk.Frame(self.root, padx=10, pady=10)
+        main_frame.pack(fill=tk.BOTH, expand=True)
+        
+        # Virsraksts
+        title_label = tk.Label(
+            main_frame, 
+            text="PROJEKTA PĀRBAUDES ATSKAITE", 
+            font=("Arial", 16, "bold")
+        )
+        title_label.pack(pady=(0, 12))
+        
+        # Ievades rāmis
+        input_frame = tk.Frame(main_frame)
+        input_frame.pack(fill=tk.X, pady=(0, 12))
+        
+        # Ievades lauks
+        tk.Label(input_frame, text="Mapes ceļš:").pack(side=tk.LEFT, padx=(0, 5))
+        
+        self.path_entry = tk.Entry(input_frame, font=("Arial", 12), width=45, bg="white", fg="black", relief=tk.SUNKEN, bd=2)
+        self.path_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 10))
+        
+        # Poga "Izvēlēties mapi"
+        self.browse_btn = tk.Button(
+            input_frame, 
+            text="📁 Izvēlēties", 
+            command=self.browse_folder,
+            width=12
+        )
+        self.browse_btn.pack(side=tk.LEFT, padx=(0, 5))
+        
+        # Poga "Analizēt mapi"
+        self.analyze_btn = tk.Button(
+            input_frame, 
+            text="⚡ Analizēt mapi", 
+            command=self.analyze_folder,
+            bg="#4CAF50", 
+            fg="white",
+            font=("Arial", 12, "bold"),
+            width=15
+        )
+        self.analyze_btn.pack(side=tk.LEFT)
+        
+        # Rezultātu lauks (ar ritjoslu)
+        result_frame = tk.Frame(main_frame)
+        result_frame.pack(fill=tk.BOTH, expand=True)
+        
+        self.result_text = scrolledtext.ScrolledText(
+            result_frame, 
+            wrap=tk.WORD, 
+            font=("Courier", 16),
+            height=20,
+            bg="black",
+            fg="lime",
+            relief=tk.SUNKEN,
+            bd=2,
+            padx=10,
+            pady=10
+        )
+        self.result_text.pack(fill=tk.BOTH, expand=True)
+        
+        # Sākotnējais teksts
+        self.result_text.insert(tk.END, "Ievadiet mapes ceļu un nospiediet 'Analizēt mapi'")
+        self.result_text.config(state=tk.DISABLED)
+        
+        # Statusa josla
+        self.status_label = tk.Label(
+            main_frame, 
+            text="Gatavs", 
+            bd=1, 
+            relief=tk.SUNKEN, 
+            anchor=tk.W,
+            font=("Arial", 9)
+        )
+        self.status_label.pack(fill=tk.X, pady=(10, 0))
+    
+    def browse_folder(self):
+        """Atver dialoglodziņu mapes izvēlei."""
+        folder_path = filedialog.askdirectory(title="Izvēlieties mapi analīzei")
+        if folder_path:
+            self.path_entry.delete(0, tk.END)
+            self.path_entry.insert(0, folder_path)
+            self.status_label.config(text=f"Izvēlēta mape: {folder_path}")
+    
+    def analyze_folder(self):
+        """Analizē norādīto mapi un parāda rezultātus."""
+        directory = self.path_entry.get().strip()
+        
+        if not directory:
+            messagebox.showwarning("Brīdinājums", "Lūdzu, ievadiet mapes ceļu!")
+            return
+        
+        # Atjauno statusu
+        self.status_label.config(text=f"Analizē mapi: {directory}...")
+        self.root.update()
+        
+        # Analizē mapi (izmanto esošās funkcijas)
+        result = get_folder_stats(directory)
+        
+        # Formatē un parāda rezultātus
+        output = format_results(result, directory)
+        
+        # Ievieto rezultātus teksta laukā
+        self.result_text.config(state=tk.NORMAL)
+        self.result_text.delete(1.0, tk.END)
+        self.result_text.insert(tk.END, output)
+        self.result_text.config(state=tk.DISABLED)
+        
+        # Atjauno statusu
+        if result is None:
+            self.status_label.config(text=f"Kļūda: Mape '{directory}' nav atrasta!")
+        else:
+            self.status_label.config(text=f"Analīze pabeigta: {directory}")
+    
+    def run(self):
+        """Palaid Tkinter galveno ciklu."""
+        self.root.mainloop()
+
+
+if __name__ == "__main__":
+    # Palaid Tkinter programmu
+    app = ProjektAnalizators()
+    app.run()
 ```
 ---
 
@@ -488,10 +857,10 @@ if __name__ == "__main__":
 
 | Problēma vai novērojums | Iespējamā ietekme |
 | ----------------------- | ----------------- |
-| 1. uzdevumā tika identificēti maģiskie skaitļi | Kods kļūst nelasāms un grūti uzturējams|
-| 2. uzdevumā programmas loģika ir bojāta | Nepareiza rezultātu izvade |
-| 3. uzdevumā trūka funkciju un dokumentācijas| Kods nav atkārtoti izmantojams, saprotams, grūti testējams un labojams |
-| 3. un 4. uzdevumā trūkst datu validācijas |  Var izraisīt programmas avāriju. |
+| 1. Failu nosaukumos atrastas atstarpes | Var rasties neskaidrības un problēmas ar failu apstrādi |
+| 2. Projekta mapē var trūkt nepieciešamās apakšmapes | Programma nevar pilnībā izpildīt pārbaudi |
+| 3. Viena funkcija sākotnēji darīja pārāk daudz | Kods bija grūtāk saprotams un uzturams |
+
 
 ---
 
@@ -501,21 +870,20 @@ Uzdevumu gaitā tika veiktas izmaiņas
 
 | Izmaiņa | Pamatojums |
 |---------|------------|
-| Pārdēvēti mainīgie: `x` → `atradumu_skaits`, `y` → `kopējais_svars`, `z` → `vecākais_vecums` | Lai mainīgo nosaukumi būtu saprotami un atbilstu PEP 8 snake_case standartam. Tas uzlabo koda lasāmību un uzturēšanu. |
-| Pievienotas trīs funkcijas: `nolasit_datus()`, `analizet_datus()`, `paradit_rezultatu()` | Lai kods būtu modulārs, atkārtoti izmantojams un vieglāk testējams. Katra funkcija veic vienu konkrētu uzdevumu. |
-| Pievienoti docstring un noņemti lieki komentāri | Lai dokumentācija izskaidrotu **kāpēc**, nevis **ko** dara kods. Docstring ir pieejami caur `help()`. |
-| Pievienota datu validācija: pārbaude vai saraksts nav tukšs | Lai programma neavarētu, mēģinot dalīt ar nulli, aprēķinot vidējo vērtību. |
-| Pievienota kļūdu apstrāde (`try/except`) funkcijā `main()` | Lai lietotājs saņemtu saprotamu kļūdas paziņojumu, nevis nesaprotamu programmas avāriju. |
-| Pievienots bloks `if __name__ == "__main__"` | Lai moduli varētu gan importēt citās programmās, gan palaist neatkarīgi. |
-| Pievienota tipu norāde (`from typing import List`) | Lai kods būtu pašdokumentējošs un IDE varētu pārbaudīt datu tipu pareizību. |
+| Kods tika sadalīts funkcijās | Tas uzlaboja lasāmību un atviegloja uzturēšanu |
+| Pievienota failu skaitīšana pēc tipa | Tas ļāva iegūt pilnīgāku informāciju par projektu |
+| Izveidots Tkinter grafiskais logs | Lietotājam kļuva ērtāk izmantot gala programmu |
 
+Izmaiņas tika veiktas, jo sākotnējais kods pildīja tikai atsevišķus vingrinājumus, bet gala risinājumam 
+bija jāspēj apvienot visas pārbaudes vienā programmā. Tika papildināta funkcionalitāte, uzlabota koda 
+struktūra un nodrošināta saprotamāka rezultātu izvade.
 ---
 
 # 8. Uzturēšanas analīze
 
 ### Kāda veida uzturēšana tika veikta?
 
-✅ **Corrective (koriģējošā)**
+☐ **Corrective (koriģējošā)**
 
 ☐ Adaptive (adaptīvā)
 
@@ -523,24 +891,10 @@ Uzdevumu gaitā tika veiktas izmaiņas
 
 ☐ Preventive (profilaktiskā)** 
 
-Pamatojums:
-Обоснование:
+Šajā darbā galvenokārt tika veikta pilnveidojošā uzturēšana, jo programma tika pakāpeniski uzlabota, 
+papildināta ar jaunām funkcijām un pārveidota lietotājam draudzīgākā risinājumā. Kods tika strukturēts 
+funkcijās, paplašināts ar pārbaudēm un noslēgumā papildināts ar grafisko saskarni.
 
----
-
-PD17 projektā tika veikti **divi uzturēšanas veidi**:
-
-**1. Korektīvā uzturēšana** (kļūdu labošana):
-- 2. vingrinājumā tika atklāta un izlabota loģikas kļūda - noņemts bezjēdzīgais skaitītājs `atradumu_skaits = atradumu_skaits + 1`, kam nebija loģiska pamatojuma
-
-**2. Pilnveidojošā uzturēšana** (koda uzlabošana):
-- Mainīgie pārdēvēti uz saprotamiem nosaukumiem (snake_case)
-- Komentāri pārveidoti, lai izskaidrotu "kāpēc", nevis "ko"
-- Kods sadalīts funkcijās
-- Pievienoti docstring
-- Izveidota projekta dokumentācija (README.md)
-
-Abi uzturēšanas veidi tika veikti, lai uzlabotu programmas kvalitāti un novērstu esošās problēmas.
 ---
 
 ### Vai tika identificēts tehniskais parāds?
@@ -549,93 +903,36 @@ Abi uzturēšanas veidi tika veikti, lai uzlabotu programmas kvalitāti un novē
 
 ☐ Nē
 
----
-
-Jā, projektā tika identificēts tehniskais parāds. Sākotnējā programmā pastāvēja vairākas problēmas, kas kavēja tālāku attīstību un uzturēšanu:
-
-| Problēma | Tehniskā parāda veids |
-|----------|----------------------|
-| Neskaidri mainīgo nosaukumi (x, y, z) | Lasāmības parāds |
-| Trūkst funkciju, viss kods ir lineārs | Strukturālais parāds |
-| Lieki komentāri, kas izskaidro acīmredzamu sintaksi | Dokumentācijas parāds |
-| Trūkst docstring | Dokumentācijas parāds |
-| Nav datu validācijas un kļūdu apstrādes | Kvalitātes parāds |
-| Bezjēdzīgs skaitītājs, kas pārkāpj loģiku | Loģikas parāds |
-
-**KTehniskā parāda samazināšana:**
-
-- Mainīgie pārdēvēti uz saprotamiem nosaukumiem
-- Kods sadalīts funkcijās
-- Pievienoti docstring un noderīgi komentāri
-- Pievienota datu validācija un kļūdu apstrāde
-- Noņemts bezjēdzīgais skaitītājs
+Tehniskais parāds izpaudās tajā, ka sākotnējie risinājumi bija vienkārši un vairāk orientēti uz atsevišķiem 
+vingrinājumiem nekā uz vienotu gala programmu. Vajadzēja pārstrukturēt kodu, sadalīt to funkcijās un padarīt 
 
 ---
 
 ### Incidenti pēc pieprasījuma un pēc izmaiņām
 
-☐ Incident / Инцидент
+☐ Incident
 
-☐ Change Request / Запрос на изменение
+✅ Change Request
 
-✅ **Abi / Оба**
+☐ **Abi**
 
 ---
 
-### Pamatojums / Обоснование
+### Pamatojums
 
-**Latviski:**
-
-Projektā tika konstatēti gan **incidents**, gan **izmaiņu pieprasījums**.
-
-**1. Incidents (kļūda programmā):**
-- 2.vingrinājumā tika atklāta loģikas kļūda - bezjēdzīgais skaitītājs `atradumu_skaits = atradumu_skaits + 1`
-- Šī kļūda ietekmēja programmas loģiku, lai gan programma formāli darbojās
-- Kļūda tika izlabota, noņemot bezjēdzīgo skaitītāju
-
-**2. Izmaiņu pieprasījums (uzlabojuma pieprasījums):**
-- Visā PD17 projektā tika pieprasītas izmaiņas koda kvalitātes uzlabošanai:
-  - Pārdēvēt mainīgos uz saprotamiem nosaukumiem (snake_case)
-  - Pārveidot komentārus (kāpēc, nevis ko)
-  - Sadalīt kodu funkcijās
-  - Pievienot docstring
-  - Izveidot projekta dokumentāciju (README.md)
-
-Abi gadījumi prasīja izmaiņas esošajā kodā - gan kļūdas labojumu, gan koda uzlabojumus.
+Darba gaitā tika īstenoti vairāki izmaiņu pieprasījumi, jo katrs nākamais vingrinājums paplašināja programmas 
+iespējas. Tika pievienota failu tipa skaitīšana, failu nosaukumu pārbaude, koda sadalīšana funkcijās un gala 
+loga izveide ar Tkinter.
 
 ---
 
 # 9. Rezultāts
-  9. Результат
 
-Apraksti gala rezultātu.
-Опиши итоговый результат.
-
-
-Uzlabots:
-- Mainīgo nosaukumi pārdēvēti uz saprotamiem (snake_case)
-- Kods sadalīts funkcijās (modularitāte)
-- Pievienota datu validācija un kļūdu apstrāde
-- Pievienota tipu norāde (type hints)
-- Izveidota projekta dokumentācija (README.md)
-
-Fiksēts:
-- Noņemts bezjēdzīgais skaitītājs, kas pārkāpa programmas loģiku
-- Izdzēsti lieki komentāri, kas izskaidroja acīmredzamu sintaksi
-- Pievienota pārbaude tukšam sarakstam (novērsta dalīšana ar nulli)
-
-Tas tika dokumentēts:
-- Pievienots docstrings katrai funkcijai
-- Pievienots moduļa apraksts (faila sākumā)
-- Izveidots README.md ar projekta aprakstu un instrukcijām
-- Izveidots vng05_projekta_struktura.txt ar mapju struktūru
-
-Ieguvumi lietotājam vai projekta uzturētājam:
-
-| Saņēmējs | Ieguvums |
-|----------|----------|
-| **Lietotājs** | Programma ir drošāka - tā neavar ar nederīgiem datiem. Lietotājs saņem saprotamus kļūdas paziņojumus. |
-| **Uzturētājs** | Kods ir vieglāk saprotams, labojams un paplašināms. Dokumentācija palīdz ātri orientēties projektā. Moduļu struktūra ļauj atkārtoti izmantot funkcijas citos projektos. |
+Gala rezultātā tika izveidota Python programma, kas spēj analizēt projekta mapi un pārbaudīt tās kvalitāti. 
+Programma nosaka, vai mape eksistē, pārbauda nepieciešamo apakšmapju un failu esamību, saskaita failus pēc 
+tipa un atrod neatbilstošus failu nosaukumus. Kods tika strukturēts funkcijās, bet gala risinājumam tika 
+pievienota Tkinter grafiskā saskarne. Lietotājs iegūst skaidru pārskatu par projekta struktūru un iespējamiem 
+trūkumiem.
 
 ---
 
@@ -643,46 +940,21 @@ Ieguvumi lietotājam vai projekta uzturētājam:
 
 ### Problēma
 
-Bezjēdzīgs skaitītājs programmas loģikā
-
-### Kā izpaudās
-
-Sākotnējā programmā bija rinda atradumu_skaits = atradumu_skaits + 1. Šim skaitītājam nebija loģiska pamatojuma, jo mainīgā vērtība tika noteikta iepriekš (atradumu_skaits = 2). Programma formāli darbojās, bet saturēja neloģisku kodu, kas varēja maldināt citus programmētājus un apgrūtināt koda uzturēšanu.
-
-### Kā atrisināju
-
-Es rūpīgi analizēju programmas loģiku un sapratu, ka skaitītājs nav vajadzīgs. Tāpēc es:
-
-1. Noņēmu bezjēdzīgo rindu atradumu_skaits = atradumu_skaits + 1
-
-2. Atstāju tikai loģiski pareizo kodu ar nosacījumu if/else
-
-3. Pievienoju komentāru, kas izskaidro kāpēc programma pārbauda atradumu skaitu
-
-### Ko iemācījos
-
-* Analizēt koda loģiku pirms veikt izmaiņas
-
-* Atpazīt bezjēdzīgus koda fragmentus, kas tikai apgrūtina lasāmību
-
-* Nepietiek, ka programma darbojas - tai jābūt arī loģiski pareizai
-
-* Komentēt "kāpēc", nevis "ko" - lai citi saprastu domāšanas procesu
-
-* Viens no svarīgākajiem principiem: labs kods nav tikai tas, kas darbojas šodien.   Tam jābūt saprotamam arī pēc mēneša vai gada.
+Viena no galvenajām problēmām bija nepieciešamība apvienot vairākus atsevišķus vingrinājumus vienā gala 
+programmā. Sākumā kods bija sadalīts pa mazām daļām, un nebija uzreiz skaidrs, kā organizēt visas pārbaudes 
+vienotā struktūrā. Problēma tika atrisināta, sadalot kodu funkcijās un pakāpeniski papildinot gala programmu 
+ar visām iepriekš izstrādātajām pārbaudēm. Šajā procesā tika apgūts, ka uzturams kods ir vieglāk saprotams, 
+ja katrai funkcijai ir viens konkrēts uzdevums.
 
 ---
 
 # 11. Secinājumi
 
-- **Kods jāraksta cilvēkam, nevis tikai datoram** - tam jābūt lasāmam un saprotamam
-- **Skaidri mainīgo nosaukumi (snake_case)** ir ļoti svarīgi koda lasāmībai
-- **Komentāriem jāatbild uz "kāpēc"**, nevis "ko" dara kods
-- **Funkcijas palīdz sadalīt kodu mazākās, pārvaldāmās daļās**
-- **Docstring ir oficiālā dokumentācija**, kas pieejama caur `help()`
-- **Datu validācija un kļūdu apstrāde** padara programmu drošāku
-- **Tehniskais parāds** ir reāla problēma, kas jāsamazina
-- **README.md** ir pirmais, ko lasa citi programmētāji
+Šis darbs parādīja, cik svarīgi ir uzturēt kodu sakārtotu, lasāmu un viegli paplašināmu. Es iemācījos izmantot 
+moduli os dažādu failu un mapju pārbaudēm, veidot vienkāršu grafisko logu ar Tkinter un strukturēt programmu 
+funkcijās. Grūtākais bija savienot visas prasības vienā gala risinājumā, taču tieši tas deva visvairāk pieredzes. 
+Nākamajā projekta versijā es vēl vairāk uzlabotu lietotāja saskarni un papildinātu programmu ar dziļāku apakšmapju 
+analīzi.
 
 ---
 
@@ -690,20 +962,21 @@ Es rūpīgi analizēju programmas loģiku un sapratu, ka skaitītājs nav vajadz
 
 ## Pašvērtējuma tabula
 
-| Kritērijs | Maks. punkti | Mani punkti | Pamatojums |
-|-----------|--------------|-------------|------------|
-| **Analīzes kvalitāte** | 25 | 23 | Kods tika rūpīgi analizēts. Atrastas visas galvenās problēmas: neskaidri mainīgie, lieki komentāri, trūkstošas funkcijas, datu validācijas trūkums. |
-| **Problēmu identificēšana** | 25 | 24 | Identificētas 6 problēmas: neskaidri nosaukumi, bezjēdzīgs skaitītājs, lieki komentāri, trūkstošas funkcijas, dokumentācijas trūkums, datu validācijas trūkums. |
-| **Izmaiņu pamatojums** | 25 | 23 | Katrai izmaiņai ir skaidrs pamatojums (lasāmība, modularitāte, drošība, dokumentācija). Viss pamatots ar PEP 8 standartiem un labas prakses principiem. |
-| **Dokumentēšana** | 15 | 14 | Pievienoti docstring katrai funkcijai, moduļa apraksts, izveidots README.md un projekta struktūras fails. |
-| **Atskaite** | 10 | 10 | Atskaite ir pilnīga, satur visus nepieciešamos punktus: problēmas, risinājumus, secinājumus, pašvērtējumu. Pievienoti ekrānuzņēmumi. |
-| **Kopā** | **100** | **94** | |
+| Kritērijs               | Maks. punkti | Mani punkti |
+| ----------------------- | ------------ | ----------- |
+| Analīzes kvalitāte      | 25           | 23          |
+| Problēmu identificēšana | 20           | 18          |
+| Izmaiņu pamatojums      | 20           | 18          |
+| Dokumentēšana           | 20           | 19          |
+| Atskaite                | 15           | 14          |
+
+Kopā: 92 / 100
 
 ---
 
 ## Komentārs
 
-Atņemtie 6 punkti (pa 2 punktiem no analīzes kvalitātes, izmaiņu pamatojuma un dokumentēšanas), jo:
+Atņemtie 8 punkti (pa 2 punktiem no analīzes kvalitātes, izmaiņu pamatojuma un dokumentēšanas), jo:
 
 - Analīzē varēja vēl dziļāk izpētīt katra koda fragmenta ietekmi uz kopējo projektu
 - Dažas izmaiņas varēja pamatot ar vairāk piemēriem no reālas prakses
@@ -715,7 +988,7 @@ Atņemtie 6 punkti (pa 2 punktiem no analīzes kvalitātes, izmaiņu pamatojuma 
 
 Materiāli ir pievienoti
 
-* projekta faili - /PD17/pielikumi/*.*; 
-* ekrānattēli - /PD17/atteli/*.*;
-* dokumentācija - READMI.md, atskaite_PD17.md, vng05_projekta_struktura.txt; 
-* [Git izmaiņu vēsture](https://github.com/JanTey/Python_Course/blob/main/PD17/atskaite_PD17.md).
+* projekta faili - /PD18/pielikumi/*.*; 
+* ekrānattēli - /PD18/atteli/*.*;
+* dokumentācija - READMI.md, atskaite_PD18.md; 
+* [Git izmaiņu vēsture](https://github.com/JanTey/Python_Course/blob/main/PD18/atskaite_PD18.md).
