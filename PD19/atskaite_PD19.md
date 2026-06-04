@@ -19,28 +19,13 @@
 ```text
 PD03/
 ├─ Pielikumi/
-│  ├─ vng01.py
-│  ├─ vng02.py
-│  ├─ vng03.py
-│  ├─ vng04.py
-│  ├─ vng05.py
-│  ├─ vng06.py
-│  ├─ vng07.py
-│  ├─ vng08.py
-│  └─ vng09.py
 ├─ atteli/
 │  ├─ maps_structure.png
 │  ├─ vng01.png
 │  ├─ vng02.png
-│  ├─ vng03.png
-│  ├─ vng04.png
-│  ├─ vng05.png
-│  ├─ vng06.png
-│  ├─ vng07.png
-│  ├─ vng08.png
-│  ├─ vng09.png
-│  └─ vng10.png
-└─ atskaite_PD19.md
+│  └─ vng07.png
+├─ atskaite_PD19.md
+└─ README.md
 ````
 ## Ekrānuzņēmums
 
