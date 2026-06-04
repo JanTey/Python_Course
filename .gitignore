@@ -29,3 +29,12 @@ data/*
 __pycache__/
 *.pyc
 *.pyo
+
+# IDE settings
+IDE_Settings/
+
+# Custom utilities
+my_lib/
+
+# Qodana config
+qodana.yaml
