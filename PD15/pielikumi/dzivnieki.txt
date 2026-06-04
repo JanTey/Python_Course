@@ -1,6 +1,0 @@
-suns|Reko|12
-kaķis|Muris|3
-papagailis|Keša|13
-kaķis|Feniks|12
-suns|Redo|7
-papagailis|Bruno|4
